@@ -1,5 +1,5 @@
 # Spoti Service
-Web Service a fin de generar un token en [Spotify for Developers](https://developer.spotify.com/)
+Web Service a fin de generar un token en [Spotify for Developers](https://developer.spotify.com/).
 
 ## Herramientas
 
@@ -22,6 +22,19 @@ npm start
 |------------------------------------|------|--------------------------------------------------------------------------------------|
 | /spotify/:client_id/:client_secret | GET  | Genera un token usando el client_id y client_secret de la cuenta personal de Spotify |
 
+## Production environment
+ Proyecto subido a Heroku [https://spoti-service.herokuapp.com/](https://spoti-service.herokuapp.com/)
+ ```ts
+ https://spoti-service.herokuapp.com/spotify/:client_id/:client_secret
+ ```
+ Response
+ ```js
+ {
+  "access_token": "BQBhXOeEt7E7oiJHFi_MDG4WXiMOJtTyCDh5wUhb0hz7t6XXXKDczMjZLsskX-mtHp7xuxJiwqQNjxB5S2h",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
+ ```
 
 ## Autor
 
